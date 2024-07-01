@@ -1,11 +1,9 @@
-/* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  color: #f8f8ff
 }
 body {
   padding: 0 10px;
@@ -13,20 +11,20 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #131b25;
+  background: linear-gradient(to left bottom, #2b6397, #000000);
 }
 .wrapper {
   width: 450px;
   padding: 25px;
-  background: #0b1215;
+  background: #cfdce0;
   border-radius: 7px;
-  box-shadow: 0 15px 30px rgba(27, 26, 26, 0.06);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.06);
 }
 .wrapper .gradienbox {
   height: 220px;
   width: 100%;
   border-radius: 7px;
-  background: linear-gradient(to left top, #5665E9, #A271F8);
+  background: linear-gradient(to left bottom, #2b6397, #000000);
 }
 .wrapper .row {
   display: flex;
@@ -64,12 +62,14 @@ body {
 }
 .wrapper textarea {
   width: 100%;
-  color: #333;
+  color: #34a0ff;
   font-size: 1.05rem;
   resize: none;
   padding: 10px 15px;
+  background: #0c1116;
   border-radius: 5px;
   border: 1px solid #ccc;
+  font-family: 'Consolas';
 }
 .buttons button {
   padding: 15px 0;
@@ -89,12 +89,11 @@ body {
   background: #5f666d;
 }
 .buttons .copy {
-  background: #3d7ebb;
+  background: #3d9dc4;
 }
 .buttons .copy:hover {
-  background: #0f518f;
+  background: #155a75;
 }
-
 @media screen and (max-width: 432px) {
   .wrapper {
     padding: 25px 20px;
@@ -118,4 +117,11 @@ body {
   .palette input:last-child {
     margin-left: 0;
   }
+}
+.footer {
+  position: fixed;
+    right: 10px; 
+    bottom: 10px; 
+    font-size: 12px; 
+    color: #a7b1aa;
 }
