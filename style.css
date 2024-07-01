@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #151822;
+}
+.wrapper{
+    width: 450px;
+    padding: 25px;
+    border-radius: 7px;
+    background: #fff;
+}
+.wrapper .gradienbox{
+    width: 100%;
+    height: 220px;
+    border-radius: 7px;
+    background: linear-gradient(to top left, #221c1c, #ff00ff);
+}
+.wrapper .row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px 0;
+}
+.row :where(.column, button){
+    width: calc(100% / 2 - 12px);
+}
+.option p{
+    font-size: 1.12rem;
+}
+.option select-box{
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+.select-box select{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.12rem
+}
+.option .colors{
+    margin-left: 60px;
+}
+.colors input{
+    height: 41px;
+    width: calc(100% / 2 - 20px);
+}
